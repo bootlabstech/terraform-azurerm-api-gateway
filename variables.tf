@@ -22,11 +22,32 @@ variable "sku_name" {
   type        = string
   description = "SKU name the gateway."
 }
-variable "subnet_id" {
+variable "private_endpoint_subnet_id" {
   type        = string
   description = "The subnet where the API gateway will be created in."
 }
-variable "virtual_network_type" {
-  type        = string
-  description = "The type of virtual network you want to use, valid values include: None, External, Internal"
+variable "private_endpoint_name" {
+  type = string
+  description = "Name of the private endpoint used by the api gateway"
+  
+}
+variable "private_endpoint_resource_group_name" {
+  type = string
+  description = "The resource group under which the endpoint will get created"
+  
+}
+variable "private_connection_resource_id" {
+  type = string
+  description = "The id of the private endpoint resource"
+  
+}
+variable "is_manual_connection" {
+  type = bool
+  description = "Manual connection or not"
+  
+}
+variable "subresource_names" {
+  type = list(string)
+  description = "subresource residing in the endpoint"
+  
 }
