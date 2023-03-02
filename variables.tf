@@ -53,11 +53,11 @@ variable "sku_name" {
 # }
 
 
-variable "subnet_id" {
-  type        = string
-  description = "The subnet where the API gateway will be created in."
-}
-variable "virtual_network_type" {
-  type        = string
-  description = "The type of virtual network you want to use, valid values include: None, External, Internal"
-}
+# variable "subnet_id" {
+#   type        = string
+#   description = "The subnet where the API gateway will be created in."
+# }
+# variable "virtual_network_type" {
+#   type        = string
+#   description = "The type of virtual network you want to use, valid values include: None, External, Internal"
+# }
