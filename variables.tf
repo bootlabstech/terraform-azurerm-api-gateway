@@ -1,63 +1,81 @@
-variable "name" {
-  type        = string
-  description = "Name of the gateway."
+ variable "name"  {
+  description = "value"
+  type        = string 
 }
-variable "location" {
-  type        = string
-  description = "Location of the gateway."
+ variable "location" {
+  description = "value"
+  type        = string 
 }
-variable "resource_group_name" {
-  type        = string
-  description = "RG name of the gateway."
+ variable "resource_group_name" {
+  description = "value"
+  type        = string 
 }
-variable "publisher_name" {
-  type        = string
-  description = "publisher name"
+ variable "publisher_name" {
+  description = "value"
+  type        = string 
 }
-variable "publisher_email" {
-  type        = string
-  description = "publisher email"
+ variable "publisher_email" {
+  description = "value"
+  type        = string 
 }
-variable "sku_name" {
-  type        = string
-  description = "SKU name the gateway."
+ variable "sku_name" {
+  description = "value"
+  type        = string 
 }
-# variable "private_endpoint_subnet_id" {
+#  variable "notification_sender_email" {
+#   description = "value"
+#   type        = string 
+# }
+ variable "public_network_access_enabled" {
+  description = "value"
+  type        = bool 
+  default = true
+}
+ variable "virtual_network_type" {
+  description = "value"
+  type        = string 
+}
+ variable "virtual_network_configuration" {
+  description = "value"
+  type        = string 
+}
+#  variable "tenant_access" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "identity" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "protocols" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "policy" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "sign_up" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "security" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "additional_location" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "proxy" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "certificate" {
+#   description = "value"
+#   type        = string 
+# }
+#  variable "delegation" {
+#   description = "value"
 #   type        = string
-#   description = "The subnet where the API gateway will be created in."
-# }
-# variable "private_endpoint_name" {
-#   type = string
-#   description = "Name of the private endpoint used by the api gateway"
-  
-# }
-# variable "private_endpoint_resource_group_name" {
-#   type = string
-#   description = "The resource group under which the endpoint will get created"
-  
-# }
-# variable "private_connection_resource_id" {
-#   type = string
-#   description = "The id of the private endpoint resource"
-  
-# }
-# variable "is_manual_connection" {
-#   type = bool
-#   description = "Manual connection or not"
-  
-# }
-# variable "subresource_names" {
-#   type = list(string)
-#   description = "subresource residing in the endpoint"
-  
-# }
-
-
-# variable "subnet_id" {
-#   type        = string
-#   description = "The subnet where the API gateway will be created in."
-# }
-# variable "virtual_network_type" {
-#   type        = string
-#   description = "The type of virtual network you want to use, valid values include: None, External, Internal"
 # }
