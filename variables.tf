@@ -22,10 +22,10 @@
   description = "value"
   type        = string 
 }
-#  variable "notification_sender_email" {
-#   description = "value"
-#   type        = string 
-# }
+ variable "subnet_id" {
+  description = "value"
+  type        = string 
+}
  variable "public_network_access_enabled" {
   description = "value"
   type        = bool 
