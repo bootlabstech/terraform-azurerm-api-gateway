@@ -115,4 +115,3 @@ resource "azurerm_api_management" "example" {
   # }
 
 
-}
